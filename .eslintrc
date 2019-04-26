@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "react-app"
+    ],
+    "plugins": [
+        "import",
+        "react",
+        "prettier"
+    ],
+    "env": {
+        "jest": true,
+        "es6": true
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "space-before-function-parent": "off",
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true
+            }
+        ],
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "padded-blocks": "off",
+        "prettier/prettier": [
+            "error"
+        ]
+    }
+}
